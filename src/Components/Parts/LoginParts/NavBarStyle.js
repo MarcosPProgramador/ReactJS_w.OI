@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { Baidu } from "../../../styles/Icons";
 export const Container = styled.nav`
     backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.7);
     width: 100%;
     position: absolute;
     top: 0;

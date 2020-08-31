@@ -32,7 +32,7 @@ const NavBar = () => {
                 <span></span>
                 <span></span>
             </HamburguerIcon>
-            <ContainerMobile className="active">
+            <ContainerMobile className="">
                 <ListMobile>
                     <ElementsMobile>
                         <LinksMobile href="#home">Home</LinksMobile>

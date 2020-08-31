@@ -1,10 +1,11 @@
 import React from 'react'
-
+import {Container, LogoBread} from './FootStyle'
 const Foot = () => {
     return (
-        <div>
+        <Container>
+            <LogoBread />
 
-        </div>
+        </Container>
     )
 }
 

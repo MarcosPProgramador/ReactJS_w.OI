@@ -11,6 +11,24 @@ export default createGlobalStyle`
         font-family: 'Roboto',Arial, Helvetica, sans-serif;
 
     }
+    ::selection{
+        background-color: #b3d4fc;
+        color: #f0f8ff;
+    }
+    *::-webkit-scrollbar{
+        width: 7px;
+        height: 7px;
+        background-color: #f0f8ff;
+    }
+    *::-webkit-scrollbar-thumb{
+        border-radius: 50rem;
+        background-color: #ff4500;
+    }
+    html{
+        scrollbar-color: #ff4500 #f0f8ff;
+        scrollbar-width: thin;
+
+    }
     html,
     body,
     #root {
@@ -21,7 +39,6 @@ export default createGlobalStyle`
 
     }
     body {
-
         overflow-x: hidden;
     }
 
