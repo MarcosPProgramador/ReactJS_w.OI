@@ -7,3 +7,5 @@
 ## npm install styled-icons
 
 ## npm install react-route-dom
+
+**Adicionando LoginPage...**
