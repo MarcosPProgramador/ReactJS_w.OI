@@ -73,6 +73,7 @@ export const HamburguerIcon = styled.div`
         height: 2px;
 
         background-color: #222632;
+        box-shadow: 0 0 10px  #f0f8ff;
         transition:  transform 400ms cubic-bezier(0.075, 0.82, 0.165, 1), background-color 400ms ease 300ms;
 
         &:nth-of-type(1) {

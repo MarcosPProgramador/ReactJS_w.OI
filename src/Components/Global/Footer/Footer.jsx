@@ -4,7 +4,6 @@ const Foot = () => {
     return (
         <Container>
             <LogoBread />
-
         </Container>
     )
 }

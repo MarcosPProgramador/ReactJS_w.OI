@@ -2,13 +2,13 @@ import React from "react";
 
 import { Container } from "./LoginStyle";
 import Form from "../../Parts/LoginParts/Form";
-import Foot from "../../Parts/LoginParts/Foot";
+import Footer from "../../Parts/LoginParts/Footer";
 
 const Login = () => {
     return (
         <Container>
             <Form />
-            <Foot />
+            <Footer />
         </Container>
     );
 };

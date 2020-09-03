@@ -12,13 +12,15 @@ import {
 
 import { Link } from "react-router-dom";
 const NavBar = () => {
-
     function handleMouseEnter(e) {
+        const Html = document.querySelector("html");
 
-        let Html = document.querySelector('html')
-        Html.classList.toggle('active')
+        window.scrollTo({
+            top: 0,
+        });
+        Html.classList.toggle("active");
 
-        e.currentTarget.classList.toggle('active')
+        e.currentTarget.classList.toggle("active");
     }
 
     return (
@@ -41,7 +43,7 @@ const NavBar = () => {
                 <span></span>
                 <span></span>
             </HamburguerIcon>
-            <ContainerMobile >
+            <ContainerMobile>
                 <ListMobile>
                     <ElementsMobile>
                         <Link to="/">Home</Link>
