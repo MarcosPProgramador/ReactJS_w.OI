@@ -1,9 +1,5 @@
-import React from 'react'
-import Layout from '../Components/Layouts/Login/Login'
-const LoginPage = () => {
-    return (
-      <Layout />
-    )
-}
+import React from "react";
+import Layout from "../Components/Layouts/Login/Login";
+const LoginPage = () => <Layout />;
 
-export default LoginPage
+export default LoginPage;

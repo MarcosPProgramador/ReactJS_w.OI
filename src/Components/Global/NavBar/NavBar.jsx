@@ -3,28 +3,28 @@ import {
     Container,
     List,
     Elements,
-    Links,
     ContainerMobile,
     ListMobile,
     ElementsMobile,
-    LinksMobile,
     HamburguerIcon,
-    LogoBread
+    LogoBread,
 } from "./NavBarStyle";
+
+import { Link } from "react-router-dom";
 const NavBar = () => {
     return (
         <>
             <Container>
-            <LogoBread />
+                <LogoBread />
                 <List>
                     <Elements>
-                        <Links href="#home">Home</Links>
+                        <Link to="/">Home</Link>
                     </Elements>
                     <Elements>
-                        <Links href="#sobre">Sobre</Links>
+                        <Link to="/sobre">Sobre</Link>
                     </Elements>
                     <Elements>
-                        <Links href="#api">Api's</Links>
+                        <Link to="/api">Api's</Link>
                     </Elements>
                 </List>
             </Container>
@@ -35,13 +35,13 @@ const NavBar = () => {
             <ContainerMobile className="">
                 <ListMobile>
                     <ElementsMobile>
-                        <LinksMobile href="#home">Home</LinksMobile>
+                        <Link to="/">Home</Link>
                     </ElementsMobile>
                     <ElementsMobile>
-                        <LinksMobile href="#sobre">Sobre</LinksMobile>
+                        <Link to="/sobre">Sobre</Link>
                     </ElementsMobile>
                     <ElementsMobile>
-                        <LinksMobile href="#api">Api's</LinksMobile>
+                        <Link to="/api">Api's</Link>
                     </ElementsMobile>
                 </ListMobile>
             </ContainerMobile>

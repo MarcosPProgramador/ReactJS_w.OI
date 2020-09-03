@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { Baidu } from "../../../styles/Icons";
-export const Container = styled.nav`
+export const Container = styled.div`
+    z-index: 2;
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 2px 2px rgba(0,0,0,0.7);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
     width: 100%;
     position: absolute;
     top: 0;
@@ -23,8 +24,7 @@ export const LogoBread = styled(Baidu)`
     width: 42px;
     height: 42px;
     color: #f0f8ff;
-
-`
+`;
 export const List = styled.ul`
     width: 100%;
     max-width: min(600px, 50vw);
@@ -34,21 +34,22 @@ export const List = styled.ul`
 `;
 export const Elements = styled.li`
     list-style: none;
-`;
-export const Links = styled.a`
-    display: block;
+    > a {
+        display: block;
 
-    padding: 12px 26px;
+        padding: 12px 26px;
 
-    letter-spacing: 1px;
-    color: #ddd;
-    text-decoration: none;
-    transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        letter-spacing: 1px;
+        color: #ddd;
+        text-decoration: none;
+        transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 
-    &:hover {
-        color: #fff;
+        &:hover {
+            color: #fff;
+        }
     }
 `;
+
 // moile
 export const HamburguerIcon = styled.div`
     z-index: 3;
@@ -66,10 +67,10 @@ export const HamburguerIcon = styled.div`
         position: absolute;
         display: block;
 
-        width: 100%;
+        width: calc(100% - 10px);
         height: 2px;
 
-        background-color: #f0f8ff;
+        background-color: #222632;
         transition: transform 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
         &:nth-of-type(1) {
             transform: translate3d(0, 15px, 0);
@@ -79,6 +80,7 @@ export const HamburguerIcon = styled.div`
         }
     }
     &.active > span {
+        background-color: #f0f8ff;
         &:nth-of-type(1) {
             transform: translate3d(0, 25px, 0) rotate(-45deg);
         }
@@ -87,7 +89,8 @@ export const HamburguerIcon = styled.div`
         }
     }
 `;
-export const ContainerMobile = styled.nav`
+export const ContainerMobile = styled.div`
+    z-index: 2;
     backdrop-filter: blur(9px);
     background-color: rgba(0, 0, 0, 0.7);
     display: block;
@@ -121,10 +124,10 @@ export const ElementsMobile = styled.li`
             margin-top: 60px;
         }
     }
-`;
-export const LinksMobile = styled.a`
-    text-decoration: none;
-    color: #f0f8ff;
-    display: block;
-    padding: 20px 30px;
+    > a {
+        text-decoration: none;
+        color: #f0f8ff;
+        display: block;
+        padding: 20px 30px;
+    }
 `;
