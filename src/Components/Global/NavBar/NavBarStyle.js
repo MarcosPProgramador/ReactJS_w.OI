@@ -52,7 +52,7 @@ export const Elements = styled.li`
 
 // moile
 export const HamburguerIcon = styled.div`
-    z-index: 3;
+    z-index: 13;
     position: absolute;
     top: 0;
     left: 0;
@@ -60,6 +60,8 @@ export const HamburguerIcon = styled.div`
     height: 50px;
 
     margin: 10px 0 0 20px;
+
+
     @media (min-width: 768px) {
         display: none;
     }
@@ -71,7 +73,8 @@ export const HamburguerIcon = styled.div`
         height: 2px;
 
         background-color: #222632;
-        transition: transform 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition:  transform 400ms cubic-bezier(0.075, 0.82, 0.165, 1), background-color 400ms ease 300ms;
+
         &:nth-of-type(1) {
             transform: translate3d(0, 15px, 0);
         }
@@ -87,10 +90,14 @@ export const HamburguerIcon = styled.div`
         &:nth-of-type(2) {
             transform: translate3d(0, 25px, 0) rotate(45deg);
         }
+
+    }
+    &.active ~ div{
+        left: 0;
     }
 `;
 export const ContainerMobile = styled.div`
-    z-index: 2;
+    z-index: 12;
     backdrop-filter: blur(9px);
     background-color: rgba(0, 0, 0, 0.7);
     display: block;

@@ -12,6 +12,15 @@ import {
 
 import { Link } from "react-router-dom";
 const NavBar = () => {
+
+    function handleMouseEnter(e) {
+
+        let Html = document.querySelector('html')
+        Html.classList.toggle('active')
+
+        e.currentTarget.classList.toggle('active')
+    }
+
     return (
         <>
             <Container>
@@ -28,11 +37,11 @@ const NavBar = () => {
                     </Elements>
                 </List>
             </Container>
-            <HamburguerIcon className="">
+            <HamburguerIcon onClick={handleMouseEnter}>
                 <span></span>
                 <span></span>
             </HamburguerIcon>
-            <ContainerMobile className="">
+            <ContainerMobile >
                 <ListMobile>
                     <ElementsMobile>
                         <Link to="/">Home</Link>

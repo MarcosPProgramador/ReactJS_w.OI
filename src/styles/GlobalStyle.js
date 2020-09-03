@@ -29,6 +29,17 @@ export default createGlobalStyle`
         scrollbar-width: thin;
 
     }
+    html.active{
+        scrollbar-width: none;
+    }
+    html.active::-webkit-scrollbar{
+        display: none;
+    }
+
+    html.active body::-webkit-scrollbar{
+        display: none;
+    }
+
     html,
     body,
     #root {
@@ -40,6 +51,9 @@ export default createGlobalStyle`
     }
     body {
         overflow-x: hidden;
+    }
+    html.active body{
+        overflow: hidden;
     }
 
 

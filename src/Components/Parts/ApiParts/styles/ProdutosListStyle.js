@@ -28,7 +28,7 @@ export const Card = styled.div`
 
     box-shadow: 0 1px 2px gray;
 
-    &:hover{
+    &.active{
         > div:nth-child(1){
             transform: translate(0);
             > div {
@@ -63,7 +63,7 @@ export const Image = styled.div`
 export const CardPrice = styled.div`
     margin: 10px 0;
     padding: 5px 19px;
-
+    display: inline-block;
     border-radius: 12px;
     background-color: #ff4500;
 
@@ -71,6 +71,9 @@ export const CardPrice = styled.div`
     font-weight: bold;
 `;
 export const CardName = styled.div`
+    text-transform: lowercase;
+
+    color: #8f99ae;
     font-size: 16px;
     font-weight: 500;
 
@@ -82,7 +85,7 @@ export const Front = styled.div`
     position: relative;
     z-index: 1;
     transition: 500ms ease-in-out transform;
-    transform: translateY(50px);
+    transform: translateY(60px);
     width: 100%;
     @media (max-width: 768px){
         transform: translateY(0);

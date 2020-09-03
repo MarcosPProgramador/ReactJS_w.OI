@@ -14,6 +14,9 @@ import {
 } from "./styles/ProdutosApiStyle";
 
 export default function ProdutosApi() {
+
+
+
     const [produto, setProduto] = useState([]);
 
     useEffect(() => {

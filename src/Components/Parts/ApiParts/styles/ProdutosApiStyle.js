@@ -21,7 +21,7 @@ export const BackGroundFixed = styled.div`
 `;
 export const Centralize = styled.div`
     position: relative;
-    z-index: 2;
+    z-index: 10;
     text-align: center;
     margin-bottom: 31px;
     > h2 {
@@ -34,10 +34,10 @@ export const SocialNetwork = styled.div`
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    z-index: 3;
+    z-index: 11;
 
     top: 190px;
-    left: 20px;
+    left: 0;
 
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
