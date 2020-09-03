@@ -1,8 +1,10 @@
 import React from "react";
 import Global from "./styles/GlobalStyle";
+
 import Login from "./Pages/LoginPage";
 import Api from "./Pages/ApiPage";
 import Sobre from "./Pages/SobrePage";
+
 import NavBar from "./Components/Global/NavBar/NavBar";
 import Footer from "./Components/Global/Footer/Footer";
 

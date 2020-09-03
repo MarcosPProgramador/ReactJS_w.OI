@@ -40,21 +40,21 @@ export default function ProdutosApi() {
             </Centralize>
             <SocialNetwork>
                 <Social>
-                    <a href="https://www.facebook.com/marcos.proenca.186/">
+                    <a rel="noopener noreferrer" href="https://www.facebook.com/marcos.proenca.186/">
 
                     <FacebookIcon />
 
                     </a>
                 </Social>
                 <Social>
-                    <a href="https://www.linkedin.com/in/marcos-proença-5820101b1/">
+                    <a rel="noopener noreferrer"  href="https://www.linkedin.com/in/marcos-proença-5820101b1/">
 
                     <LinkedinIcon />
 
                     </a>
                 </Social>
                 <Social>
-                    <a href="https://github.com/MarcosPProgramador" target="_blank"
+                    <a rel="noopener noreferrer"  href="https://github.com/MarcosPProgramador" target="_blank"
 
                     >
                     <GitHubIcon />
