@@ -25,22 +25,65 @@ const Form = () => {
     function handleChange(e) {
         let id = e.target.getAttribute("data-speed");
         const label = document.querySelectorAll(".x-rotulo-ab")[id];
+        const el = e.target;
 
         setForm({
             ...form,
-            [e.target.id]: e.target.value,
+            [el.id]: el.value,
         });
 
-        if (e.target.value) {
+        if (el.value && el.value.length < 38) {
             label.classList.add("active");
             verificarForm(e);
         } else {
             label.classList.remove("active");
         }
-        function verificarForm(e) {
-            let expression = /^a-z0.9./;
-            if (e.target.value) {
-                alert("ok");
+        function verificarForm() {
+            const completeOrError = {
+                complete() {
+                    el.classList.remove("error");
+                    el.classList.add("complete");
+                },
+                error() {
+                    el.classList.remove("complete");
+                    el.classList.add("error");
+                },
+                verified(rgEx, key) {
+                    if (rgEx[key]) completeOrError.complete();
+                    else completeOrError.error();
+                },
+            };
+            let key = Number(el.getAttribute("data-speed"));
+
+            let rgEx = [
+                {},
+                el.value.match(/([a-z0-9-_.])+@+([a-z.])/),
+            ];
+
+            switch (key) {
+                case 0:
+                    var amount = el.value.split(" ").length;
+                    var item = el.value.split(" ");
+                    if (amount >= 2) {
+                        for (const iterator of item) {
+                            if (iterator.match(/[a-z]/)) {
+                                completeOrError.complete()
+                            }
+
+
+
+                        }
+
+                    }else{
+                        completeOrError.error()
+                    }
+
+                    break;
+                case 1:
+                    completeOrError.verified(rgEx, key);
+                    break;
+                default:
+                    break;
             }
         }
     }

@@ -75,7 +75,7 @@ export const WrapperInput = styled.div`
 `;
 export const Input = styled.input`
     border-radius: 10px;
-    border: 0;
+    border: 2px solid transparent;
     height: 100%;
     width: 100%;
 
@@ -96,16 +96,26 @@ export const Input = styled.input`
         color: #f0f8ff;
         top: -15px;
     }
-
+    &.error{
+        background-color: transparent;
+        border-color: #d90429;
+        color: #d90429;
+    }
+    &.error ~ label,
+    &.error ~ svg {
+        color: #d90429 !important;
+    }
+    &.complete{
+        background-color: transparent;
+        border-color: #2d9d8f;
+        color: #2d9d8f;
+    }
+    &.complete ~ label,
+    &.complete ~ svg {
+        color: #2a9d8f !important;
+    }
 
     ~ .x-rotulo-ab {
-
-        &.error ~ label,
-        &.error ~ svg {
-        }
-        &.complete ~ label,
-        &.complete ~ svg {
-        }
 
 
         &.active ~ svg,
@@ -115,6 +125,7 @@ export const Input = styled.input`
             color: #f0f8ff;
             top: -15px;
         }
+
     }
 `;
 export const LoginInfo = styled.div`
