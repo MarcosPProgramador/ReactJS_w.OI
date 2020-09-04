@@ -11,8 +11,7 @@ export const Container = styled.div`
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
-    @media(max-width: 1240px){
-
+    @media (max-width: 1240px) {
     }
 `;
 export const Content = styled.div`
@@ -20,7 +19,7 @@ export const Content = styled.div`
 
     margin-top: 60px;
     width: 600px;
-    & > h2{
+    & > h2 {
         margin-bottom: 15px;
 
         font-size: min(40px, max(6vw, 20px));
@@ -90,18 +89,32 @@ export const Input = styled.input`
         width: 20px;
         height: 20px;
     }
-    &.error ~ label,
-    &.error ~ svg {
-    }
-    &.complete ~ label,
-    &.complete ~ svg {
-    }
     &:focus ~ svg,
     &:focus ~ label {
         font-size: 12px;
 
         color: #f0f8ff;
         top: -15px;
+    }
+
+
+    ~ .x-rotulo-ab {
+
+        &.error ~ label,
+        &.error ~ svg {
+        }
+        &.complete ~ label,
+        &.complete ~ svg {
+        }
+
+
+        &.active ~ svg,
+        &.active {
+            font-size: 12px;
+
+            color: #f0f8ff;
+            top: -15px;
+        }
     }
 `;
 export const LoginInfo = styled.div`
