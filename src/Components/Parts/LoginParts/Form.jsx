@@ -65,7 +65,7 @@ const Form = () => {
                     verified(key) {
                         var amount = el.value.split(" ").length;
                         var item = el.value.split(" ");
-                        
+
                         if (amount >= 2) {
                             for (const iterator of item) {
                                 if (rgEx[key].expressionRel(iterator)) {

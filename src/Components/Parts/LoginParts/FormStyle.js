@@ -55,7 +55,6 @@ export const FormUser = styled.form`
     position: relative;
 
     &:before {
-
         padding: 5px 10px;
         border-radius: 5px;
         z-index: 10;
@@ -64,13 +63,13 @@ export const FormUser = styled.form`
         left: 0;
         position: absolute;
     }
-    &.h-zcamp-invalid-ah:before{
-        content: 'Campo inválido!';
+    &.h-zcamp-invalid-ah:before {
+        content: "Campo inválido!";
         color: #d90429;
         background-color: #d114;
     }
-    &.h-zcamp-valid-ah:before{
-        content: 'Formulário pode ser Enviado!';
+    &.h-zcamp-valid-ah:before {
+        content: "Formulário pode ser Enviado!";
         color: #2d9;
         background-color: #2d92;
     }
@@ -118,7 +117,7 @@ export const Input = styled.input`
         color: #f0f8ff;
         top: -15px;
     }
-    &.error{
+    &.error {
         background-color: transparent;
         border-color: #d90429;
         color: #d90429;
@@ -127,7 +126,7 @@ export const Input = styled.input`
     &.error ~ svg {
         color: #d90429 !important;
     }
-    &.complete{
+    &.complete {
         background-color: transparent;
         border-color: #2d9d8f;
         color: #2d9d8f;
@@ -138,8 +137,6 @@ export const Input = styled.input`
     }
 
     ~ .x-rotulo-ab {
-
-
         &.active ~ svg,
         &.active {
             font-size: 12px;
@@ -147,7 +144,6 @@ export const Input = styled.input`
             color: #f0f8ff;
             top: -15px;
         }
-
     }
 `;
 export const LoginInfo = styled.div`

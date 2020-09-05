@@ -23,14 +23,13 @@ export default function ProdutosApi() {
         async function fetchProdutos(url) {
             const response = await fetch(url);
             const data = await response.json();
-
             setProduto(data);
         }
         fetchProdutos(
             "http://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl&product"
         );
     }, []);
-
+    console.log(produto)
     return (
 
         <Container>
