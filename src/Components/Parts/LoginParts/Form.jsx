@@ -19,6 +19,7 @@ const Form = () => {
     });
 
     function handleSubmit(e) {
+
         e.preventDefault();
     }
 
@@ -56,28 +57,33 @@ const Form = () => {
             let key = Number(el.getAttribute("data-speed"));
 
             let rgEx = [
-                {},
-                el.value.match(/([a-z0-9-_.])+@+([a-z.])/),
+                {
+                    expressionRel(iterator) {
+                        return iterator.match(/[a-z]/);
+                    },
+
+                    verified(key) {
+                        var amount = el.value.split(" ").length;
+                        var item = el.value.split(" ");
+                        
+                        if (amount >= 2) {
+                            for (const iterator of item) {
+                                if (rgEx[key].expressionRel(iterator)) {
+                                    console.log(iterator)
+                                    completeOrError.complete();
+                                }
+                            }
+                        } else {
+                            completeOrError.error();
+                        }
+                    },
+                },
+                el.value.match(/([a-z0-9-_.])+@+([a-z])+.com/),
             ];
 
             switch (key) {
                 case 0:
-                    var amount = el.value.split(" ").length;
-                    var item = el.value.split(" ");
-                    if (amount >= 2) {
-                        for (const iterator of item) {
-                            if (iterator.match(/[a-z]/)) {
-                                completeOrError.complete()
-                            }
-
-
-
-                        }
-
-                    }else{
-                        completeOrError.error()
-                    }
-
+                    rgEx[key].verified(key);
                     break;
                 case 1:
                     completeOrError.verified(rgEx, key);
@@ -101,7 +107,7 @@ const Form = () => {
             </Content>
             <WrapperForm onSubmit={handleSubmit}>
                 <h2>Faça login</h2>
-                <FormUser>
+                <FormUser className="z-xformul-af">
                     <WrapperInput>
                         <Input
                             data-speed="0"

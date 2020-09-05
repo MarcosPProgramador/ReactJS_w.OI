@@ -52,6 +52,28 @@ export const FormUser = styled.form`
     & > button {
         margin-top: 15px;
     }
+    position: relative;
+
+    &:before {
+
+        padding: 5px 10px;
+        border-radius: 5px;
+        z-index: 10;
+        display: inline-block;
+        bottom: -60px;
+        left: 0;
+        position: absolute;
+    }
+    &.h-zcamp-invalid-ah:before{
+        content: 'Campo inválido!';
+        color: #d90429;
+        background-color: #d114;
+    }
+    &.h-zcamp-valid-ah:before{
+        content: 'Formulário pode ser Enviado!';
+        color: #2d9;
+        background-color: #2d92;
+    }
 `;
 export const WrapperInput = styled.div`
     &:nth-child(2) {
