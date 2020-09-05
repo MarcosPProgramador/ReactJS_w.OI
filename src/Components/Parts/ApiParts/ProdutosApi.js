@@ -29,7 +29,6 @@ export default function ProdutosApi() {
             "http://makeup-api.herokuapp.com/api/v1/products.json?brand=covergirl&product"
         );
     }, []);
-    console.log(produto)
     return (
 
         <Container>
