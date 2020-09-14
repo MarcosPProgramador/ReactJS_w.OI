@@ -19,7 +19,6 @@ const Form = () => {
     });
 
     function handleSubmit(e) {
-
         e.preventDefault();
     }
 
@@ -69,7 +68,7 @@ const Form = () => {
                         if (amount >= 2) {
                             for (const iterator of item) {
                                 if (rgEx[key].expressionRel(iterator)) {
-                                    console.log(iterator)
+                                    console.log(iterator);
                                     completeOrError.complete();
                                 }
                             }
@@ -98,7 +97,7 @@ const Form = () => {
             <Content>
                 <h2>
                     Este site foi totalmente desenvolvido por
-                    <span>Marcos Proença</span>
+                    <span> Marcos Proença</span>
                 </h2>
                 <p>
                     Site simples, mais objetivo. O intuito é mostrar um pouco de
