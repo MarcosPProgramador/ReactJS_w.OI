@@ -6,9 +6,10 @@
 
 **Technologies used:**
 
-- _HTML_
-- _styled components_
-- _styled icons_
-- _React JS_
-- _Git_
-- _NPM_
+-   _HTML_
+-   _react-router-dom_
+-   _styled components_
+-   _styled icons_
+-   _React JS_
+-   _Git_
+-   _NPM_
