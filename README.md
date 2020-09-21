@@ -4,4 +4,11 @@
 
 ![alt](./img/layout.png)
 
-#### ReactJS
+Technologies used:
+
+_HTML_
+_styled components_
+_styled icons_
+_React JS_
+_Git_
+_NPM_
