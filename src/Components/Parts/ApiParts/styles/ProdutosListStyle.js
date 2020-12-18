@@ -48,11 +48,11 @@ export const Image = styled.div`
     opacity: 0;
     width: 100%;
     height: 320px;
-    background-image: url('./img/screen-pattern.png');
+    background-image: url('./assets/img/screen-pattern.png');
     display: flex;
     &::before{
         margin: auto;
-        content:'image no';
+        content:'no image';
         font-weight: bold;
         font-size: 32px;
         color: #222632;

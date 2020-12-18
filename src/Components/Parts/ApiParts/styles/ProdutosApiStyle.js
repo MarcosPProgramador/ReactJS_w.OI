@@ -14,7 +14,7 @@ export const BackGroundFixed = styled.div`
     width: 100%;
     z-index: 1;
     min-height: 100vh;
-    background-image: url('./img/triangle-background.png');
+    background-image: url('./assets/icon/triangle-background.png');
     background-repeat: no-repeat;
     background-position: right top;
 

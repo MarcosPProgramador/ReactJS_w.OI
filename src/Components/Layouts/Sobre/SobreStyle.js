@@ -22,7 +22,7 @@ export const Container = styled.div`
     justify-content: center;
 
     background-position: left top;
-    background-image: url('./img/background.jpg');
+    background-image: url('./assets/img/background.jpg');
 
     & *{
         color: #f0f8ff;

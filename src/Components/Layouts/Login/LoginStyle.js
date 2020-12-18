@@ -6,5 +6,5 @@ export const Container = styled.div`
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: cover;
-    background-image: url("./img/background.jpg");
+    background-image: url("./assets/img/background.jpg");
 `;

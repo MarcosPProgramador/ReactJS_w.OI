@@ -2,14 +2,21 @@
 
 ## Preview
 
-![alt](./img/layout.png)
+-   desktop
+
+    ![layout-desktop](./public/assets/img/layout-desktop.png)
+
+-   mobile
+
+
+    ![layout-mobile](./public/assets/img/layout-mobile.png)
 
 **Technologies used:**
 
--   _HTML_
--   _react-router-dom_
--   _styled components_
--   _styled icons_
--   _React JS_
--   _Git_
--   _NPM_
+-   HTML
+-   react-router-dom
+-   styled-components
+-   styled-icons
+-   React
+-   Git
+-   NPM
