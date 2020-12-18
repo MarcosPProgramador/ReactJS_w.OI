@@ -1,5 +1,7 @@
 # Project create by Marcos Proença
 
+## Before you start, download the dependencies | **`npm i`**
+
 ## Preview
 
 -   desktop
